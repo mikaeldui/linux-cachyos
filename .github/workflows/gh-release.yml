@@ -12,7 +12,7 @@ jobs:
       image: cachyos/cachyos
     defaults:
       run:
-        shell: /usr/bin/fish {0}
+        shell: fish {0}
     steps:
     - name: Checkout
       uses: actions/checkout@v3
