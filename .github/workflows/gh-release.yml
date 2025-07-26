@@ -14,6 +14,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     - name: Release
-      shell: fish {0}
+      shell: /bin/fish {0}
       run: |
         echo "Hello"
