@@ -1,0 +1,19 @@
+name: Publish GitHub Release
+on:
+  push:
+    paths:
+      - 'linux-cachyos/PKGBUILD'
+  workflow_dispatch:
+
+jobs:
+  jobby:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    #- name: Install fish
+    #  run: sudo apt-get install fish -y
+    - name: Release
+      shell: fish
+      run: |
+        echo "Hello"
